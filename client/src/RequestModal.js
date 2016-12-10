@@ -82,21 +82,7 @@ class RequestModal extends React.Component {
             </ModalHeader>
             <div className='modal-inside'>
               <div>
-                &nbsp; What would you like? &nbsp;
-
-                <br />
-                <input onChange={this.onTextChange.bind(this)}
-                className='modal-input third-input'
-                type="text"
-
-                id="text"/>
-                &nbsp; Quantity &nbsp;
-                <input
-                  type="number"
-                  min = "0"
-                  max = "9"
-                />
-                &nbsp; MENU: &nbsp;
+                Please select an item from our menu below:
                 <br />
                 <select onChange={this.onTextChange.bind(this)}>
                     {this.state.menu.map(item => {
